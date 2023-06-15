@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/ContactUs.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/Navbar.css" type="text/css">
+    <title>Contact Us</title>
+    <!-- Setting Icon -->
+    <link rel="icon" href="../Img/Bebvest logo.png">
+</head>
+
+<body onload="LoadAnimation()">
+    <div class="Navbar" id="Navbar"></div>
+    <div class="Container">
+        <div class="form-box">
+            <form class="hidden" onsubmit="OnSubmit()">
+                <div class="Heading">Contact Us</div>
+                <div class="inputbox">
+                    <input type="text" id="Name" required>
+                    <label>Name</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Surname" required>
+                    <label>Surname</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Message" required>
+                    <label for="">Message</label>
+                </div>
+                <div class="UserType">
+                    <label class="circular-checkbox">
+                        <input type="radio" name="userType">
+                        <span class="checkmark"></span>
+                        Private Investor
+                    </label>
+                    <label class="circular-checkbox">
+                        <input type="radio" name="userType">
+                        <span class="checkmark"></span>
+                        Corporate Investor
+                    </label>
+                    <label class="circular-checkbox">
+                        <input type="radio" name="userType">
+                        <span class="checkmark"></span>
+                        Broker
+                    </label>
+                    
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script defy src="../JS/ContactUs.js"></script>
+    <script src="../JS/Navbar.js"></script>
+</body>
+
+</html>

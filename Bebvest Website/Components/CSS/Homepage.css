@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+    --backgroundDark: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Img/mountain-dome-background.jpg);
+    --BlueColour: #3d7eff;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    background-image: var(--backgroundDark);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; /* Prevents body from scrolling */
+}
+
+.Body {
+    width: 100%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll; /* Enable scrolling within the .Body div */
+    /* outline: solid gold; */
+}
+
+.Intro
+{
+    outline: solid var(--BlueColour);
+    height: 95%;
+    width: 100%;
+    text-align: center
+}
+
+h1
+{
+    color: white;
+    height: 100vh;
+    font-size: 10vh;
+}
+
+h2
+{
+    color: var(--BlueColour);
+    font-size: 5vh;
+    text-decoration: underline;
+}
+
+.GoalContainer
+{
+    color: white;
+    backdrop-filter: blur(17.5px);
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: solid gold; */
+}
+
+.Goals
+{
+    /* outline: solid gold; */
+    width: 80%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.Info
+{
+    /* outline: solid red; */
+    width: 80%;
+    /* height: 25%; */
+    text-align: center;
+}
+
+.CardContainer
+{
+    /* outline: solid gold; */
+    width: 90%;
+    height: 55vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Card 
+{
+    background-color: rgb(255, 255, 255);
+    height: 85%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--BlueColour);
+}
+
+
+.Card img
+{
+    height: 70%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.Card button
+{
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    font-size: 2.5vh;
+    background-color: var(--BlueColour);
+    color: white;
+    border: none;
+    transition: ease-in-out 0.2s;
+}
+
+.Card button:hover
+{
+    background-color: white;
+    color: var(--BlueColour);
+    border: 2px solid var(--BlueColour);
+}
+
+.Card2 
+{
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--BlueColour);
+}
+
+
+.Card2 img
+{
+    height: 70%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.Card2 button
+{
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    font-size: 1vh;
+    background-color: var(--BlueColour);
+    color: white;
+    border: none;
+}
+
+.Arrow
+{
+    height: 100%;
+    width: 10%;
+    font-size: 6vh;
+    color: var(--BlueColour);
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.Arrow:hover
+{
+    transform: scale(1.2);
+}
+
+.Body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.Body::-webkit-scrollbar-track {
+    background: white;
+}
+
+.Body::-webkit-scrollbar-thumb {
+    background: var(--BlueColour);
+}

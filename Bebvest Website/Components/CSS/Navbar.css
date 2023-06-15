@@ -1,0 +1,88 @@
+
+:root {
+    --Colour: white;
+}
+
+li 
+{
+    list-style: none;
+}
+
+.Navbar a 
+{
+    text-decoration: none;
+    color: var(--Colour) ;
+    font-weight: bold;
+    font-size: 3vh;
+    margin-right: 2vw;
+    transition: ease-in-out 0.3s;
+}
+
+a:hover 
+{
+    color: var(--BlueColour);
+    text-decoration: underline;
+}
+
+.Navbar img
+{
+    height: 100%;
+    width: auto;
+}
+
+.Navbar 
+{
+    height: 12%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    outline: solid white;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.Navspacing
+{
+    /* padding: 10px; */
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.LogoContainer
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.Slogan
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.Slogan p:first-child 
+{
+    margin: 0;
+    color: var(--BlueColour);
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.Slogan p:last-child 
+{
+    margin: 0;
+    color: var(--BlueColour);
+    font-size: 2vh;
+    font-style: italic;
+}
+
+.current
+{
+    color: var(--BlueColour);
+    text-decoration: underline;
+}

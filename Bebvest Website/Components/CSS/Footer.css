@@ -1,0 +1,30 @@
+.Footer
+{
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    /* outline: solid var(--BlueColour); */
+    display: grid;
+    place-items: center;
+}
+
+.FooterSpacing
+{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer h3
+{
+    color: var(--BlueColour);
+    font-size: 3.75vh;
+    text-decoration: underline;
+}
+
+.Footer a
+{
+    color: black;
+    font-size: 2.5vh;
+    text-decoration: underline;
+}
