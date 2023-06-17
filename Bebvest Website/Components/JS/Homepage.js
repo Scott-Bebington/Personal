@@ -12,13 +12,13 @@
 
     var CardList = [
         {
-            contains: '<img src="../Img/Image1.jpg" alt="Investment"><button>The markets we trade</button>'
+            contains: '<img src="../Img/Image1.jpg" alt="Investment"><button onclick="MarketsWeTrade()">The markets we trade</button>'
         },
         {
-            contains: '<img src="../Img/Image2.jpg" alt="Investment"><button>Our Methodology</button>'
+            contains: '<img src="../Img/Image2.jpg" alt="Investment"><button onclick="OurMethodology()">Our Methodology</button>'
         },
         {
-            contains: '<img src="../Img/Image3.jpg" alt="Investment"><button>Investment Rules</button>'
+            contains: '<img src="../Img/Image3.jpg" alt="Investment"><button onclick="InvestmentRules()">Investment Rules</button>'
         }
     ];
 
@@ -68,13 +68,35 @@
     {
         if (event.key === 'ArrowRight') 
         {
-            moveCards(1)
+            moveCards(-1)
         }
         else if (event.key === 'ArrowLeft')
         {
-            moveCards(-1)
+            moveCards(1)
         }
     });
 }
 
+// ------------------------------------------------------------------------------------------------------- //
+//                                                                                                         //
+//                                    Go to Page                                                           //
+//                                                                                                         //
+// ------------------------------------------------------------------------------------------------------- //
+
+{
+    function OurMethodology() 
+    {
+        window.location.href = "../HTML/OurMethodology.html";
+    }
+
+    function MarketsWeTrade()
+    {
+        window.location.href = "../HTML/MarketsWeTrade.html";
+    }
+
+    function InvestmentRules()
+    {
+        window.location.href = "../HTML/InvestmentRules.html";
+    }
+}
 

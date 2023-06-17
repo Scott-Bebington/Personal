@@ -98,6 +98,12 @@ h2
     align-items: center;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px var(--BlueColour);
+    transition: ease-in-out 0.3s;
+}
+
+.Card:hover
+{
+    transform: scale(1.05);
 }
 
 
@@ -138,8 +144,13 @@ h2
     align-items: center;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px var(--BlueColour);
+    transition: ease-in-out 0.3s;
 }
 
+.Card2:hover
+{
+    transform: scale(1.05);
+}
 
 .Card2 img
 {

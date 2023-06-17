@@ -1,6 +1,6 @@
 .Footer
 {
-    height: 20%;
+    /* height: 25%; */
     width: 100%;
     background-color: white;
     /* outline: solid var(--BlueColour); */
@@ -12,7 +12,7 @@
 {
     width: 95%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .Footer h3
@@ -25,6 +25,32 @@
 .Footer a
 {
     color: black;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.Footer a:hover
+{
+    color: var(--BlueColour);
+}
+
+.Footer p
+{
+    color: var(--BlueColour);
+    font-size: 3vh;
+}
+
+.Contact
+{
+    /* outline: solid gold; */
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+Text
+{
+    font-size: 2vh;
 }

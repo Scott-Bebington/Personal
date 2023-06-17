@@ -61,7 +61,8 @@ h2
     color: white;
 }
 
-.ProfitCard {
+.ProfitCard 
+{
     outline: solid var(--BlueColour);
     border-radius: 10px;
     width: 40em;
@@ -98,8 +99,6 @@ h2
     justify-content: space-evenly;
     margin: 1%;
 }
-
-
 
 .Calculate
 {

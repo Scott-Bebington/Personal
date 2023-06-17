@@ -4,10 +4,38 @@ var Footer = document.getElementById("Footer");
 Footer.innerHTML =
 `
 <div class="FooterSpacing">
-    <div>
-        <a href="../HTML/ContactUs.html"><h3>Contact Us</h3></a>
-        <p>invest@bebvest.com</p>
-    </div>
-    <div>© 2023 <a href="../HTML/Homepage.html">bebvest.com</a></div>
+<div>
+<p>
+    Useful Links
+</p>
+<ul>
+    <li><a href="../HTML/AboutUs.html">Why Us</a></li>
+    <li><a href="../HTML/AboutUs.html">Business Rules</a></li>
+    <li><a href="../HTML/AboutUs.html">The Markets We Trade</a></li>
+</ul>
+</div>
+<div>
+<p>
+    Contact Us
+</p>
+<div class="Contact">
+    <text>
+        ✉ invest@bebvest.com
+    </text>
+    <text>
+        © 2023 bebvest.com
+    </text>
+</div>
+
+</div>
+<div>
+<p>
+    Social Media
+</p>
+<ul>
+    <li><a href="https://www.facebook.com">Facebook</a></li>
+    <li><a href="https://www.instagram.com">Instagram</a></li>
+    <li><a href="https://twitter.com">Twitter</a></li>
+</div>
 </div>
 `;

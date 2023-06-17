@@ -69,6 +69,7 @@ const observer = new IntersectionObserver((entries) =>
     }
     else
     {
+      window.location.href = "../HTML/Homepage.html";
       alert("Message sent successfully!");
     }
   }
