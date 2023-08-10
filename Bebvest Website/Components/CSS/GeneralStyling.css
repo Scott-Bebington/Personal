@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --backgroundDark: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../Img/mountain-dome-background.jpg);
+    --Introbackground: url(../Img/IntroBackground.jpg);
+    --BlueColour: #2187c8;
+    --BlueColourDark: #0e4a7b;
+
+    --Image1: url(../Img/Image1.jpeg);
+    --Image2: url(../Img/Image2.jpg);
+    --Image3: url(../Img/Image3.jpeg);
+    --Image4: url(../Img/Image4.jpg);
+    --Image5: url(../Img/Image5.jpeg);
+
+    --IsThisForMeLight: url(../Img/IsThisForMe.jpg);
+
+    --LoginBackgroundDark: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Img/Login-background.jpg);
+}
+
+@media (max-width: 850px) {
+    .Intro {
+        height: 20vh;
+        background-image: var(--backgroundDark);
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .Intro h1 {
+
+        color: var(--BlueColourDark);
+        font-size: 4vh;
+        padding-top: 5%;
+    }
+
+    .Intro h4 {
+        /* color: var(--BlueColour); */
+        color: white;
+        font-size: 2vh;
+        font-style: italic;
+    }
+}
+
+@media (min-width: 851px) {
+    .Intro {
+        height: 30vh;
+        background-image: var(--backgroundDark);
+        background-position: center;
+        background-size: 100% auto;
+    }
+
+    .Intro h1 {
+        color: var(--BlueColourDark);
+        font-size: 7vh;
+    }
+
+    .Intro h4 {
+        color: black;
+        font-style: italic;
+    }
+
+    .IntroUnderneath {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.Scroll {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.Outline {
+    outline: solid gold;
+}
+
+.Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Blue {
+    background-color: var(--BlueColourDark);
+}
+
+.White {
+    background-color: white;
+}

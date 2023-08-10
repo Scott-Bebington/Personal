@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --backgroundDark: #313131;
+    --backgroundLight: #ffffff;
+    --ImageDark: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../Img/Featured-Image-wine-farms.jpg);
+    --ImageLight: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../Img/Featured-Image-wine-farms.jpg);
+    --textDark: #ffffff;
+    --textLight: #000000;
+
+    --Card1ImageLight: url(../Img/LogoNew.png);
+    --Card1ImageDark: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../Img/LogoNew.png);
+
+    --Card2ImageLight: url(../Img/Wines.jpg);
+    --Card2ImageDark: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../Img/Wines.jpg);
+
+    --Card3ImageLight: url(../Img/Wine_Tasting.jpg);
+    --Card3ImageDark: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../Img/Wine_Tasting.jpg);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+@media (max-width: 600px) {
+
+
+    .Welcome3 {
+        height: 20vh;
+        width: 100%;
+        background-image: url(../Img/Presentation1.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Welcome3 img {
+        height: 15vh;
+    }
+
+    p {
+        padding-top: 2%;
+        color: var(--textDark);
+        font-size: 3vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .Card3 {
+        height: 40vh;
+        width: 40vh;
+        /* background-color: var(--backgroundLight); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        border-radius: 50%;
+    }
+
+    .ImageSplit h4 {
+        text-align: center;
+        width: 85%;
+        border-bottom: 1px solid gold;
+        padding-bottom: 2vh;
+        color: white;
+    }
+}
+
+@media (min-width: 601px) {
+
+    .Welcome3 {
+        height: 87vh;
+        width: 100%;
+        background-image: url(../Img/Presentation1.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Welcome3 img {
+        height: 55vh;
+    }
+
+    p {
+        padding-top: 2%;
+        color: var(--textDark);
+        font-size: 7vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .Card3 {
+        height: 50vh;
+        width: 50vh;
+        /* background-color: var(--backgroundLight); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .Text {
+        color: white;
+    }
+
+
+}
+
+
+
+/* Testing for index css */
+.Outline {
+    outline: solid red;
+}
+
+.BackgroundColourBlue {
+    background-color: #2b4360;
+}
+
+.Center {
+    display: grid;
+    place-items: center;
+}
+
+.Spacing {
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
+.info {
+    font-size: 6vh;
+    color: var(--textDark);
+    text-align: center;
+}

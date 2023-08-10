@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Collection</title>
+    <link rel="stylesheet" href="CSS/Wines.css">
+    <link rel="stylesheet" href="CSS/Navbar.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+    <link rel="icon" href="Img/LogoNew.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm bg-light sticky-top">
+        <div class="container-fluid">
+            <img src="Img/LogoNew.png" width="80" height="80">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav NavSpacing">
+                    <li class="nav-item">
+                        <a class="NotCurrent" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="NotCurrent" href="AboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Current" href="#">Wine Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="NotCurrent" href="WineTasting.html">Wine Tasting</a>
+                    </li>
+                    <li class="nav-item NextTo">
+                        <a class="NotCurrent" href="#" style="padding-right: 1vh;"><i class="gg-profile"></i></a>
+                        <a class="NotCurrent" href="Cart.html"><i class="fa fa-shopping-cart">0</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filters and Wines -->
+    <div class="container-fluid BackgroundColourBlue">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid FilterUnderneath">
+                <button class="navbar-toggler Button" type="button" data-bs-toggle="collapse" data-bs-target="#filters"
+                    aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">
+                    Filters
+                </button>
+                <div class="collapse navbar-collapse FiltersUnderneath" id="filters">
+                    <div class="container Padding">
+                        <div class="container-fluid Padding">
+                            <div class="container-fluid FiltersNextTo">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+                        </div>
+                        <div class="container-fluid FiltersNextToMobile">
+                            <div class="container">
+                                <select class="Input PaddingMobile">
+                                    <option value="All">Please select a wine type</option>
+                                    <option value="Red">Red</option>
+                                    <option value="White">White</option>
+                                    <option value="Rose">Rose</option>
+                                    <option value="Sparkling">Sparkling</option>
+                                    <option value="Dessert">Dessert</option>
+                                </select>
+                            </div>
+                            <div class="container FiltersNextToMobile">
+                                <select class="Input Margin PaddingMobile">
+                                    <option value="All">Sort By</option>
+                                    <option value="Name">Name</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Year">Year</option>
+                                </select>
+                                <select class="Input PaddingMobile">
+                                    <option value="All">Ascending</option>
+                                    <option value="Name">Descending</option>
+                                </select>
+                            </div>
+                            <div class="container FiltersNextToMobile">
+                                <input class="Input Margin PaddingMobile" type="text" placeholder="Min Price">
+                                <input class="Input PaddingMobile" type="text" placeholder="Max Price">
+                            </div>
+
+                        </div>
+                        <div class="container-fluid FiltersNextTo Padding">
+                            <button type="button" class="btn btn-outline-light">
+                                Apply Filters
+                            </button>
+                            <button type="button" class="btn btn-outline-light">
+                                Clear Filters
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Spacing for filters and wines -->
+                    <div class="container"> <!-- To Align divs -->
+                        <div class="container"> <!-- To Align divs -->
+                            <div class="container"> <!-- Work Here -->
+                                <div class="container" style="border-bottom: 1px solid white;"> <!-- Work Here -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="container" style="margin-top: 2.5%;"> <!-- To Align divs -->
+            <div class="container"> <!-- To Align divs -->
+                <!-- Do all work here -->
+                <div class="container CardWrap" id="CardContainer">
+                    <div class="CardStyling card">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card CardStyling">
+                        <img src="Img/Wines.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wine Name</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Type:</div>
+                                    <div class="col-sm-8">Red</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Year:</div>
+                                    <div class="col-sm-8"> 2015</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4">Price:</div>
+                                    <div class="col-sm-8">R1 500.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Footer"></div>
+
+    <script src="JS/Footer.js"></script>
+    <script src="JS/Wines.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

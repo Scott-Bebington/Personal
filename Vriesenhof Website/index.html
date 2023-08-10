@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/Navbar.css">
+  <link rel="stylesheet" href="CSS/Footer.css">
+  <link rel="icon" href="Img/LogoNew.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-sm bg-light sticky-top">
+    <div class="container-fluid">
+      <img src="Img/LogoNew.png" width="80" height="80">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav NavSpacing">
+          <li class="nav-item">
+            <a class="Current" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="NotCurrent" href="AboutUs.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="NotCurrent" href="Wines.html">Wine Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="NotCurrent" href="WineTasting.html">Wine Tasting</a>
+          </li>
+          <li class="nav-item NextTo">
+            <a class="NotCurrent" href="#" style="padding-right: 1vh;"><i class="gg-profile"></i></a>
+            <a class="NotCurrent" href="Cart.html"><i class="fa fa-shopping-cart">0</i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="BackgroundColourBlue">
+    <div class="Welcome3">
+      <img src="Img/LogoNew.png">
+    </div>
+    <p>
+      Welcome to Vriesenhof winery
+    </p>
+    <div class="container Spacing">
+      <div class="row">
+        <div class="col-sm Center ImageSplit">
+          <div class="Card3" id="Card1" onclick="GoToAboutUs()"></div>
+          <h4 class="Text">Learn a little bit more about us</h4>
+        </div>
+        <div class="col-sm Center ImageSplit">
+          <div class="Card3" id="Card2" onclick="GoToWines()"></div>
+          <h4 class="Text">View our wine collection</h4>
+        </div>
+        <div class="col-sm Center">
+          <div class="Card3" id="Card3" onclick="GoToWineTasting()"></div>
+          <h4 class="Text" style="color: white;">Book a wine tasting</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Footer"></div>
+
+  <script src="JS/Footer.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

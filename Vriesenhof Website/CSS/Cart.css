@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .VerticalSpacing {
+        padding-top: 2vh;
+    }
+}
+
+@media (min-width: 601px) {}
+
+.BackgroundColourBlue {
+    background-color: #2b4360;
+}
+
+.Spacing {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.Outline {
+    /* outline: solid gold; */
+    background-color: white;
+    border-radius: 20px;
+}
+
+.Underneath {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: black;
+    padding-top: 2vh;
+}
+
+input {
+    border-radius: 10px;
+    height: 7vh;
+    padding-left: 1vh;
+}
+
+.PaymentInfoSpacing {
+    padding-top: 5.5vh;
+}
+
+.Button {
+    border-radius: 10px;
+    height: 7vh;
+    margin-top: 5.5vh;
+    background-color: green;
+    border: 2px solid black;
+    color: white;
+}
+
+
+
+/* Payment CSS */

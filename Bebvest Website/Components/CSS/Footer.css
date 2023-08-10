@@ -1,56 +1,98 @@
-.Footer
-{
-    /* height: 25%; */
-    width: 100%;
-    background-color: white;
-    /* outline: solid var(--BlueColour); */
-    display: grid;
-    place-items: center;
+
+@media (max-width: 600px) {
+    .TextCenter {
+        text-align: center;
+    }
+
+    .Footer a {
+        color: black;
+        font-size: 2vh;
+        text-decoration: none;
+        transition: 0.2s ease-in-out;
+    }
+
+    /* li {
+        list-style-type: none;
+    } */
+
+    button {
+        font-size: 2vh;
+    }
+
+
 }
 
-.FooterSpacing
-{
-    width: 95%;
-    display: flex;
-    justify-content: space-around;
+@media (min-width: 601px) and (max-width: 850px) {
+    .Footer a {
+        color: black;
+        font-size: 1.5vh;
+        text-decoration: none;
+        transition: 0.2s ease-in-out;
+    }
+
+
 }
 
-.Footer h3
-{
-    color: var(--BlueColour);
-    font-size: 3.75vh;
-    text-decoration: underline;
+
+@media (min-width: 851px) {
+    .Footer a {
+        color: white;
+        font-size: 2vh;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
 }
 
-.Footer a
-{
-    color: black;
-    font-size: 1.5vh;
-    text-decoration: underline;
-    transition: 0.2s ease-in-out;
+.Footer {
+    padding: 1.5vh 0; /* Adjust padding as needed */
+    background-color: var(--BlueColourDark);
 }
 
-.Footer a:hover
-{
-    color: var(--BlueColour);
+
+.Footer a:hover {
+    color: white;
 }
 
-.Footer p
-{
-    color: var(--BlueColour);
+.Footer p {
+    color: white;
     font-size: 3vh;
 }
 
-.Contact
-{
-    /* outline: solid gold; */
+.Contact {
     height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-Text
-{
-    font-size: 2vh;
+/* Social Media button CSS */
+
+.SocialMediaButton {
+    background: transparent;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 25px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+
+}
+
+.SocialMediaButton svg {
+    fill: black;
+    height: 25px;
+    width: 25px;
+}
+
+.SocialMediaButton:hover {
+    color: white;
+}
+
+.SocialMediaButton:hover svg {
+    fill: currentColor;
+}
+
+.UnderneathFooter {
+    display: flex;
+    flex-direction: column;
 }

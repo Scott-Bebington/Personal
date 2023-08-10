@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <!-- Custom CSS -->
+  <link type="text/css" rel="stylesheet" href="Components/CSS/Homepage.css">
+  <link type="text/css" rel="stylesheet" href="Components/CSS/Navbar.css">
+  <link type="text/css" rel="stylesheet" href="Components/CSS/Footer.css">
+  <link type="text/css" rel="stylesheet" href="Components/CSS/GeneralStyling.css">
+
+  <!-- Bootstrap + Login Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+
+  <!-- Setting Icon -->
+  <link rel="icon" href="Components/Img/Bebvest logo.png">
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg sticky-top White" id="Nav"></nav>
+
+  <!-- Bebvest logo and slogan -->
+  <div class="container-fluid text-center Center Intro pt-3 pb-3">
+    <div>
+      <h1>Bebvest</h1>
+      <h4 class="text-light">"Money in Motion"</h4>
+    </div>
+  </div>
+
+  <!-- Intro + Carousel -->
+  <div class="container-fluid White p-5 pb-5">
+    <div class="container-fluid InnerContainer">
+      <h1 class="text-center pt-3">
+        Our Vision
+      </h1>
+      <div class="container-fluid">
+        At Bebvest, it is our mission to offer a
+        low to medium risk investing alternative
+        that also produces impressive profits.
+        This is not a quick way to get rich;
+        instead, our focus is on a medium to long
+        term path to wealth creation.
+        In order to achieve a win-win situation,
+        our philosophy is to charge no fees and
+        only share in the profits.
+      </div>
+
+      <div class="container-fluid">
+        <div class="conatiner-fluid pt-3" style="border-bottom: 1px solid grey;"></div>
+      </div>
+
+      <div class="container-fluid mt-3">
+        <div class="row mb-3">
+          <div class="col-lg-5 Underneath SpaceBetween Spacing mt-3 mb-3">
+            <button class="HomepageLinkButton" onclick="GoToMarkets()">The Markets We Trade</button>
+            <button class="HomepageLinkButton" onclick="GoToWhyUs()">Our Approach</button>
+            <button class="HomepageLinkButton" onclick="GoToOurPerformance()">Our Performance</button>
+            <button class="HomepageLinkButton" onclick="GoToVehicle()">Is This Vehicle For Me?</button>
+          </div>
+          <div class="col-lg-7 mt-3 mb-3">
+            <div id="AutoplayCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#AutoplayCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#AutoplayCarousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#AutoplayCarousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#AutoplayCarousel" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#AutoplayCarousel" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active MainImage ImageAttributes" id="Image1" data-bs-interval="6000">
+                </div>
+                <div class="carousel-item MainImage ImageAttributes" id="Image2" data-bs-interval="6000">
+                </div>
+                <div class="carousel-item MainImage ImageAttributes" id="Image3" data-bs-interval="6000">
+                </div>
+                <div class="carousel-item MainImage ImageAttributes" id="Image4" data-bs-interval="6000">
+                </div>
+                <div class="carousel-item MainImage ImageAttributes" id="Image5" data-bs-interval="6000">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#AutoplayCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#AutoplayCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid Footer" id="Footer"></div>
+
+  <!-- JS -->
+  <script src="Components/JS/Homepage.js"></script>
+  <script src="Components/JS/Footer.js"></script>
+  <script src="Components/JS/Navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

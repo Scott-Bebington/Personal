@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Sharing</title>
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="Components/CSS/ProfitSharingScale.css">
+    <link type="text/css" rel="stylesheet" href="Components/CSS/Navbar.css">
+    <link type="text/css" rel="stylesheet" href="Components/CSS/Footer.css">
+    <link type="text/css" rel="stylesheet" href="Components/CSS/GeneralStyling.css">
+
+    <!-- Bootstrap + Login Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+
+    <!-- Setting Icon -->
+    <link rel="icon" href="Components/Img/Bebvest logo.png">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg sticky-top White" id="Nav"></nav>
+
+    <!-- Bebvest logo and slogan -->
+    <div class="container-fluid text-center Center Intro pt-3 pb-3">
+        <div>
+            <h1>Profit Sharing</h1>
+            <h4 class="text-light">See how we share the profits</h4>
+        </div>
+    </div>
+
+    <!-- Main Div -->
+    <div class="container-fluid p-5">
+        <div class="container-fluid NextTo White Center" id="TableContainer">
+            <div class="LittleCardsContainer Underneath SpaceBetween">
+                <button class="LittleCard Center text-center" id="Private">
+                    Private Investors
+                </button>
+                <button class="LittleCard Center text-center" id="Corporate">
+                    Corporate Investors
+                </button>
+                <button class="LittleCard Center text-center" id="Broker">
+                    Brokers
+                </button>
+            </div>
+            <div class="ProfitCard Placeholder TextTop text-center" id="BigCard">
+                <div id="Info"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="SplitInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Percentage Splits
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    eg. If the markets produce a 22% return for the year, the split will be as follows (Tier 4 client with $5 000 investment):
+                    <br>
+                    <br>
+                    for the first 10% return, the split will be 70/30 (70% to the investor and 30% to Bebvest)
+                    <br>
+                    for the next 12% return, the split will be 60/40 (60% to the investor and 40% to Bebvest)
+                    <br>
+                    ... and so on.
+                    <br>
+                    this is not the same as saying that the investor will receive 60% of the total return, but rather
+                    that the split will be 60/40 for the next 12% return
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid Footer" id="Footer"></div>
+
+    <!-- JS -->
+    <script src="Components/JS/ProfitSharingScale.js"></script>
+    <script src="Components/JS/Footer.js"></script>
+    <script src="Components/JS/Navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

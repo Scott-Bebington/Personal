@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Tasting</title>
+    <link rel="stylesheet" href="CSS/WineTasting.css">
+    <link rel="stylesheet" href="CSS/Navbar.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+    <link rel="icon" href="Img/LogoNew.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm bg-light sticky-top">
+        <div class="container-fluid">
+            <img src="Img/LogoNew.png" width="80" height="80">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav NavSpacing">
+                    <li class="nav-item">
+                        <a class="NotCurrent" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="NotCurrent" href="AboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="NotCurrent" href="Wines.html">Wine Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Current" href="#">Wine Tasting</a>
+                    </li>
+                    <li class="nav-item NextTo">
+                        <a class="NotCurrent" href="#" style="padding-right: 1vh;"><i class="gg-profile"></i></a>
+                        <a class="NotCurrent" href="Cart.html"><i class="fa fa-shopping-cart">0</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="BackgroundColourBlue">
+        <p>
+            Coming Soon...
+        </p>
+        <div class="container Spacing">
+            <!-- Booking -->
+            <div class="row">
+                <div class="col-sm-6 Spacing">
+                    <h2 class="text-light text-center">
+                        Make a booking
+                    </h2>
+
+                    <div class="container-fluid Underneath">
+                        <div class="row">
+                            <div class="col-sm-6 Underneath">
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John">
+                            </div>
+                            <div class="col-sm-6 Underneath">
+                                <label for="lname">Surname</label>
+                                <input type="text" id="lname" name="surname" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="john@example.com">
+
+                        <div class="row">
+                            <div class="col-sm-6 Underneath">
+                                <label for="Date">Date</label>
+                                <input type="date" id="Date" name="Date">
+                            </div>
+                            <div class="col-sm-6 Underneath">
+                                <label for="Participants">Participants</label>
+                                <input type="text" id="Participants" name="Participants" placeholder="4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <button type="button" class="btn btn-primary Button">
+                            Make a booking
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Carousel -->
+                <div class="col-sm-6">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="7000">
+                                <img src="Img/Image1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="7000">
+                                <img src="Img/Image2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="7000">
+                                <img src="Img/Image3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="7000">
+                                <img src="Img/Image4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Footer"></div>
+
+    <script src="JS/Footer.js"></script>
+    <script src="JS/WineTasting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

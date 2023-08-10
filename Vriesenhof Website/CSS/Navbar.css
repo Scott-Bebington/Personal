@@ -1,12 +1,12 @@
 .NavSpacing {
+    /* outline: solid gold; */
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 3vh;
 }
 
 .Current {
-    color: var(--BlueColour);
+    color: #bd6c86;
     text-decoration: none;
 }
 
@@ -15,15 +15,7 @@
     text-decoration: none;
 }
 
-.ConfirmLogout {
-    cursor: pointer;
+.NextTo {
+    display: flex;
+    flex-direction: row;
 }
-
-#Nav {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-#Nav img {
-    cursor: pointer;
-}
-

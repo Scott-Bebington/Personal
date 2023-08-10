@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-:root {
-    --backgroundDark: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Img/mountain-dome-background.jpg);
-    --BlueColour: #3d7eff;
-    --OffWhite: #f5f5f5;
-}
 html,
 body {
     height: 100%;
@@ -11,151 +5,312 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    background-image: var(--backgroundDark);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden; /* Prevents body from scrolling */
 }
 
-.Body {
-    width: 100%;
-    height: 89%; /* Adjust this value to match the navbar height */
+@media (max-width: 850px) {
+    .NextTo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SpaceBetween {
+        justify-content: space-between;
+    }
+
+    .ProfitCard {
+        outline: solid var(--BlueColour);
+        border-radius: 10px;
+        width: 92vw;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1%;
+        background-color: aliceblue;
+        color: white;
+        font-size: 4vh;
+    }
+
+    .LittleCardsContainer {
+        border-radius: 10px;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .LittleCard {
+        border: 2px solid var(--BlueColour);
+        border-radius: 10px;
+        width: 30vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1%;
+        background-color: aliceblue;
+        color: var(--BlueColour);
+        transition: 0.3s ease-in-out;
+    }
+
+    .LittleCard:hover {
+        border: 2px solid var(--BlueColour);
+        background-color: var(--BlueColour);
+        border-radius: 10px;
+        width: 18em;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1%;
+        color: white;
+    }
+
+    .Calculate {
+        width: 95%;
+        height: 7%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .InputValue {
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        border-top: 2px solid var(--BlueColour);
+        border-left: 2px solid var(--BlueColour);
+        border-bottom: 2px solid var(--BlueColour);
+        border-right: none;
+        border-top-left-radius: 7.5px;
+        border-bottom-left-radius: 7.5px;
+        color: black;
+    }
+
+    table {
+        width: 95%;
+        text-align: left;
+    }
+
+    th {
+        color: var(--BlueColourDark);
+        font-size: 2vh;
+    }
+
+    tr {
+        width: 100%;
+    }
+
+    td {
+        color: black;
+        font-size: 1.5vh;
+        border: 1px solid black;
+    }
+
+    .Placeholder {
+        background-image: url(../Img/ProfitSharingScalePlaceHolder.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        font-size: 1.5vh;
+        color: black;
+        width: 95%;
+        text-align: left;
+    }
+
+    .Heading {
+        width: 95%;
+        padding-top: 3%;
+        font-size: 2.5vh;
+        text-align: left;
+    }
+
+    .SubmitButton {
+        width: 10%;
+        height: 100%;
+        background-color: transparent;
+        border: 2px solid var(--BlueColour);
+        border-top-right-radius: 7.5px;
+        border-bottom-right-radius: 7.5px;
+        color: black;
+        background-image: url(../Img/search.png);
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 851px) {
+    .ProfitCard {
+        outline: solid var(--BlueColour);
+        border-radius: 10px;
+        width: 70%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1%;
+        background-color: #f0f0f0;
+        color: white;
+        font-size: 4vh;
+    }
+
+    .LittleCardsContainer {
+        border-radius: 10px;
+        width: 20em;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1%;
+    }
+
+    .LittleCard {
+        border: 2px solid var(--BlueColour);
+        border-radius: 10px;
+        width: 18em;
+        height: 19vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1%;
+        color: var(--BlueColour);
+        transition: 0.3s ease-in-out;
+    }
+
+    .LittleCard:hover {
+        border: 2px solid var(--BlueColour);
+        border-radius: 10px;
+        width: 18em;
+        height: 19vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1%;
+        background-color: var(--BlueColour);
+        color: white;
+    }
+
+    .Calculate {
+        width: 95%;
+        height: 7%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+    .InputValue {
+        width: 20%;
+        height: 100%;
+        background-color: transparent;
+        border-top: 2px solid var(--BlueColour);
+        border-left: 2px solid var(--BlueColour);
+        border-bottom: 2px solid var(--BlueColour);
+        border-right: none;
+        border-top-left-radius: 7.5px;
+        border-bottom-left-radius: 7.5px;
+        color: black;
+    }
+
+    table {
+        width: 95%;
+        text-align: left;
+    }
+
+    th {
+        color: var(--BlueColourDark);
+        font-size: 2.5vh;
+    }
+
+    tr {
+        width: 100%;
+    }
+
+    td {
+        color: black;
+        font-size: 2vh;
+        border: 1px solid black;
+    }
+
+    .Placeholder {
+        background-image: url(../Img/ProfitSharingScalePlaceHolder.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        font-size: 2vh;
+        color: black;
+        width: 95%;
+        text-align: left;
+    }
+
+    .Heading {
+        width: 95%;
+        padding-top: 3%;
+        font-size: 4vh;
+        text-align: left;
+    }
+
+    .SubmitButton {
+        width: 5%;
+        height: 100%;
+        background-color: transparent;
+        border: 2px solid var(--BlueColour);
+        border-top-right-radius: 7.5px;
+        border-bottom-right-radius: 7.5px;
+        color: black;
+        background-image: url(../Img/search.png);
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+}
+
+.TextTop {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: scroll; /* Enable scrolling within the .Body div */
-    /* outline: solid gold; */
-}
+    justify-content: start;
 
-.Intro
-{
-    outline: solid var(--BlueColour);
-    height: 95%;
-    width: 100%;
-    text-align: center
-}
-
-h1
-{
-    color: white;
-    height: 100vh;
-    font-size: 10vh;
-}
-
-h2
-{
-    color: white;
-    font-size: 5vh;
-}
-
-
-.TableContainer 
-{
-    /* outline: solid red; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    backdrop-filter: blur(17.5px);
-    color: white;
-}
-
-.ProfitCard 
-{
-    outline: solid var(--BlueColour);
-    border-radius: 10px;
-    width: 40em;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1%;
-}
-
-.LittleCardsContainer
-{
-    /* outline: solid var(--BlueColour); */
-    border-radius: 10px;
-    width: 20em;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1%;
-}
-
-.LittleCard
-{
-    outline: solid var(--BlueColour);
-    border-radius: 10px;
-    width: 18em;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1%;
-}
-
-.Calculate
-{
-    width: 100%;
-    height: 7%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.Dropdown
-{
-    width: 40%;
-    height: 100%;
-    background-color: transparent;
-    border: 2px solid var(--BlueColour);
-    border-radius: 10px;
-    color: white;
-}
-
-select option
-{
-    color: black;
-}
-
-table
-{
-    width: 95%;
-    text-align: left;
-}
-
-th
-{
-    color: white;
-    font-size: 2.5vh;
-}
-
-tr
-{
-    /* outline: solid gold; */
-    width: 100%;
-}
-
-td
-{
-    color: white;
+    color: var(--BlueColourDark);
     font-size: 2vh;
-    border: 1px solid white;
 }
 
-.Body::-webkit-scrollbar {
-    width: 0.5rem;
+.TextTop h5 {
+    padding-top: 12vh;
+    color: var(--BlueColourDark);
+    font-size: 3vh;
 }
 
-.Body::-webkit-scrollbar-track {
-    background: white;
+.ProfitCard.Placeholder.TextTop.text-center {
+    position: relative;
 }
 
-.Body::-webkit-scrollbar-thumb {
-    background: var(--BlueColour);
+.info-container {
+    position: relative;
 }
+
+.Info {
+    background-image: url(../Img/info.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1; /* Position to the right of the text */
+    margin-left: 5px; /* Add some spacing between text and Info */
+    height: 3vh;
+    width: 3vh;
+    cursor: pointer;
+}
+
+

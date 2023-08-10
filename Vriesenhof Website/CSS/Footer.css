@@ -1,0 +1,88 @@
+@media (max-width: 600px) {
+    
+
+    .Seperator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        border-bottom: 2px solid black;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+
+    .SeperatorLast {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding-top: 3%;
+        padding-bottom: 7%;
+    }
+
+    .GoogleMaps {
+        height: 3vh;
+        cursor: pointer;
+    }
+
+    .SocialMedia {
+        display: flex;
+
+    }
+
+    .SocialMediaButton {
+        margin-right: 1vw;
+        /* outline: solid red; */
+        height: 4vh;
+        width: 15vh;
+        background-color: var(--backgroundLight);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 601px) {
+
+    .GoogleMaps {
+        height: 3vh;
+        cursor: pointer;
+    }
+
+    .SocialMedia {
+        display: flex;
+
+    }
+
+    .SocialMediaButton {
+        margin-right: 1vw;
+        /* outline: solid red; */
+        height: 4vh;
+        width: 15vh;
+        background-color: var(--backgroundLight);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+        font-size: 2vh;
+    }
+
+    .SocialMediaButton:hover {
+        border-color: blue;
+        color: blue;
+        cursor: pointer;
+    }
+}
+
+.FooterSpacing {
+    padding: 3%;
+}
+
+.SocialMediaCenter {
+    display: flex;
+    justify-content: center;
+}
